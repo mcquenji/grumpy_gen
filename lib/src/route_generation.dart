@@ -117,6 +117,15 @@ Future<RouteGenerationSpec?> analyzeRouteLibrary(
   LibraryReader library,
   RouteAstResolver resolver,
 ) async {
+  if (library.classes.any(
+    (element) => element.allSupertypes.any(
+      (type) =>
+          type.element.name == 'CliApp' &&
+          type.element.library.uri.toString().startsWith('package:grumpy_cli/'),
+    ),
+  )) {
+    return null;
+  }
   final rootClasses = library.classes
       .where((element) => !element.isAbstract && _isRootModule(element))
       .toList(growable: false);
