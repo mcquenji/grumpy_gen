@@ -1,6 +1,6 @@
 # grumpy_gen
 
-Source gen to enhance projects using [grumpy](https://github.com/necodeIT/grumpy) or [grumpy_flutter](https://github.com/necodeIT/grumpy_flutter).
+Source gen to enhance projects using [grumpy](https://github.com/mcquenji/grumpy) or [grumpy_flutter](https://github.com/mcquenji/grumpy_flutter).
 
 ## Routes
 
