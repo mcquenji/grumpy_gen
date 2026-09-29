@@ -11,3 +11,5 @@ export 'src/route_generation.dart'
         analyzeRouteLibrary,
         emitFlutterRoutes,
         emitGenericRoutes;
+
+export 'src/config_generation.dart';

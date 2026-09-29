@@ -5,3 +5,10 @@ builders:
     build_extensions: { ".dart": [".routes.dart"] }
     auto_apply: dependents
     build_to: source
+  grumpy_config:
+    import: "package:grumpy_gen/grumpy_gen.dart"
+    builder_factories: ["grumpyConfigBuilder"]
+    build_extensions:
+      "$package$": ["lib/src/shared/domain/models/app_config.g.dart", "schema.json", "docs/configuration.md"]
+    auto_apply: dependents
+    build_to: source
